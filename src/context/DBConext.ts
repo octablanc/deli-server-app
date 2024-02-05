@@ -1,5 +1,6 @@
 import { Sequelize } from "sequelize";
 import UsersEntity from "../entities/Users.entity";
+require('dotenv').config();
 
 const { DB_URL } = process.env;
 
