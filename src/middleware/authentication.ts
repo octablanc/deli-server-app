@@ -1,8 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import jwt, { Secret } from 'jsonwebtoken';
-import * as dotenv from 'dotenv';
 
-dotenv.config();
 const { JWT_SECRET } = process.env;
 
 export const authentication = (req: Request, res: Response, next: NextFunction) => {

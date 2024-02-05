@@ -3,11 +3,8 @@ import morgan from 'morgan';
 import DBcontext from './context/DBConext';
 import cors from 'cors';
 import router from './router/Router';
-import * as dotenv from 'dotenv';
 import { authentication } from './middleware/authentication';
 import { generateToken } from './controllers/GenerateToken.controller';
-
-dotenv.config();
 const { PORT } = process.env;
 const app = express();
 

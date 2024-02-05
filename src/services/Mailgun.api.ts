@@ -1,8 +1,6 @@
-import * as dotenv from "dotenv";
 import Mailgun from 'mailgun-js';
 import { HtmlMailTemplate } from "./utils/HtmlMailTemplate";
 
-dotenv.config();
 const { MAILGUN_DOMAIN, MAILGUN_API_KEY } = process.env;
 
 class Mailgun_API {
